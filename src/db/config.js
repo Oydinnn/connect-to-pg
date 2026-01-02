@@ -10,7 +10,7 @@ const pool = new Pool({
   password:process.env.DB_PASSWORD
 })
 
-async function db_connect(params) {
+async function db_connect() {
   try {
     await pool.connect()
     console.log('Database connected');
